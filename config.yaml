@@ -136,7 +136,7 @@ animations:
 
 # ── SCRIPT GENERATION ──────────────────────────────────────────────────────
 script:
-  model_path: "C:/Users/iamir/Downloads/ultron-ai/llama.cpp/models/huihui-ai.Qwen3-8B-abliterated.Q4_K_M.gguf"
+  model_path: "script/model.gguf"
   model_type: "qwen2"            # Model architecture (Qwen series)
   gpu_layers: 50                # GPU layers for acceleration
   threads: 8                    # CPU threads
