@@ -15,6 +15,7 @@ env/
 output/
 outputs/
 *.log
+*.gguf
 
 # Local caches and temporary files
 .cache/
