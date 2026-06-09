@@ -1,0 +1,6 @@
+1
+1
+Testing Telugu in English. This system works offline with sherpa-onnx.
+n
+n
+0

@@ -1,0 +1,42 @@
+# ============================================================================
+# REEL GENERATOR - Unified Requirements
+# ============================================================================
+# Single virtual environment for ALL modules
+
+# ── Core Video Processing ──
+moviepy>=2.0.0
+imageio-ffmpeg>=0.5.0
+Pillow>=10.0.0
+numpy>=1.21.0
+scipy>=1.7.0
+
+# ── Script Generation (DeepSeek R1 via llama.cpp) ──
+llama-cpp-python>=0.3.0
+
+# ── Voice Synthesis ──
+sherpa-onnx>=1.10.0
+sounddevice>=0.4.5
+tqdm>=4.62.0
+
+# ── Image Scraping ──
+selenium>=4.15.0
+requests>=2.31.0
+urllib3>=2.1.0
+webdriver-manager>=4.0.1
+
+# ── NLP Keyword Extraction ──
+rake-nltk>=1.0.6
+nltk>=3.8.0
+
+# ── Language Translation (NLLB) ──
+torch>=2.0.0
+transformers>=4.33.0
+sentencepiece>=0.2.0
+accelerate>=1.6.0
+
+# ── Configuration ──
+pyyaml>=6.0.0
+
+# ── Logging & Utilities ──
+colorama>=0.4.6
+rich>=13.0.0

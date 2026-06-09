@@ -1,0 +1,73 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Downloaded Images (scraped content)
+*/
+!.gitkeep
+
+# Log Files
+*.log
+scraper.log
+debug.log
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary Files
+*.tmp
+*.bak
+*.temp
+*~
+
+# Statistics/Data Files
+*.json
+stats.json
+scraping_stats.json
+
+# Config with sensitive data
+config.local.ini
+.env
+.env.local
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+
+# OS
+.DS_Store
+Thumbs.db

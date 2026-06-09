@@ -1,0 +1,9 @@
+sherpa-onnx>=1.10.0
+numpy>=1.21.0
+sounddevice>=0.4.5
+scipy>=1.7.0
+requests>=2.26.0
+tqdm>=4.62.0
+torch>=2.0.0
+transformers>=4.33.0
+torchaudio>=2.0.0

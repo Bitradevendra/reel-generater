@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Generated media and logs
+output/
+outputs/
+*.log
+
+# Local caches and temporary files
+.cache/
+.hf_cache/
+.tmp/
+language_converter/.hf_cache/
+language_converter/.tmp/
+script/.cache/
+script/outputs/
+
+# Large local model/vendor folders
+script/llama.cpp/
+voice/models/
+voice/outputs/
+voice/sherpa-onnx/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

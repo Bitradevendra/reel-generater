@@ -1,0 +1,191 @@
+You are a Senior AI Engineer and Prompt Engineer.
+
+Your task is to BUILD a minimal, clean, fully working local Reel Script Generator using llama.cpp with a DeepSeek R1 GGUF model.
+
+---
+
+🎯 GOAL:
+
+Create a Python-based system that:
+
+* Takes input:
+  Topic
+  Content Type
+  Duration (seconds)
+
+* Uses llama.cpp (local, same folder)
+
+* Generates ONLY ONE clean voiceover text
+
+* Saves output into:
+  outputs/final.txt
+
+---
+
+📁 ENVIRONMENT:
+
+* llama.cpp executable is in the SAME folder as script
+* DeepSeek R1 GGUF model is in SAME folder
+* No APIs, fully offline
+
+---
+
+🧾 CORE GENERATION PROMPT (VERY IMPORTANT):
+
+The system MUST use this EXACT prompt when calling the model:
+
+---
+
+You are a high-performance short-form content generator.
+
+Your task is to generate ONLY a clean voiceover text for reels.
+
+INPUT:
+Topic: {topic}
+Content Type: {type}
+Duration: {seconds}
+
+STRICT RULES:
+Output ONLY one continuous text
+No sections
+No labels
+No headings
+No explanations
+No scene breakdown
+No extra formatting
+No symbols like --- or ###
+
+OUTPUT REQUIREMENTS:
+Text must be ready for Text-to-Speech and subtitles
+Use natural speaking style
+Add commas and small pauses for human-like speaking
+Keep sentences short and clear
+Make it engaging and viral
+
+LENGTH CONTROL:
+Use ~2.2 words per second
+
+CONTENT STRUCTURE (HIDDEN):
+Start with strong hook
+Introduce topic quickly
+Explain clearly
+End with punch or CTA
+
+STYLE RULES:
+Technology:
+Simple explanation with real-life examples and what technology is used
+
+Funny:
+Add humor and exaggeration
+
+Professional:
+Clean, confident, focused on topic
+
+Educational:
+Simple, clear, easy to revise
+
+TARGET AUDIENCE:
+Engineers (students) with exam and practical view
+Common people with clear understanding
+Kids with slow and simple explanation
+
+CLI TARGET AUDIENCE SELECTION:
+The system must allow the user to select the target audience via CLI input.
+Example:
+audience = input("Select target audience (engineers / common / kids): ")
+
+Based on the selected audience, the prompt must dynamically adjust tone and explanation style:
+
+* engineers → professional, exam-focused, practical insights
+* common → simple, clear, easy to understand
+* kids → slow, very simple, easy words, friendly tone
+
+ENGAGEMENT RULES:
+First line must create curiosity
+Use "you" to connect
+Avoid boring openings
+
+FINAL RULE:
+Return ONLY the final text. Nothing else.
+
+---
+
+⚙️ PYTHON IMPLEMENTATION REQUIREMENTS:
+
+Write FULL working Python code that:
+
+1. Takes user input:
+   topic = input()
+   type = input()
+   duration = input()
+
+2. Builds the prompt dynamically
+
+3. Calls llama.cpp using subprocess:
+   Example:
+   llama-cli -m model.gguf -p "PROMPT"
+
+4. Uses parameters:
+   --temp 0.8
+   --top-p 0.9
+   --repeat-penalty 1.1
+   --n-predict dynamic (based on duration)
+
+5. Captures ONLY model output
+
+6. Cleans output:
+
+   * Remove unwanted text if any
+   * Ensure single paragraph
+   * Trim spaces
+
+7. Saves output:
+
+   * Create folder "outputs" if not exists
+   * Save file:
+     outputs/final.txt
+
+8. Print final text to console
+
+---
+
+🧹 CLEAN PROJECT RULES:
+
+* Do NOT create multiple files
+
+* Do NOT create:
+  script.txt
+  tts.txt
+  scenes.txt
+  temp files
+
+* Keep only:
+  main.py
+  llama-cli / llama-cli.exe
+  model.gguf
+  outputs/final.txt
+
+* Do NOT use unnecessary libraries
+
+---
+
+📦 OUTPUT FORMAT:
+
+Return:
+
+1. Complete Python Code (ready to run)
+2. Example run (input/output)
+3. Folder structure
+
+---
+
+🚨 STRICT RULES:
+
+* Code must be complete and executable
+* No placeholders
+* No missing parts
+* No unnecessary explanation
+
+---
+
+Now build the complete system.

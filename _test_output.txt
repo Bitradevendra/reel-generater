@@ -1,0 +1,26 @@
+llama-cpp-python imported OK
+Model path: C:\Users\iamir\Downloads\REEL_GENERATOR\script\model.gguf
+Exists: True
+Size: 2.45 GB
+ERROR: ValueError: Failed to load model from file: C:\Users\iamir\Downloads\REEL_GENERATOR\script\model.gguf
+Traceback (most recent call last):
+  File "C:\Users\iamir\Downloads\REEL_GENERATOR\_test_llm.py", line 15, in <module>
+    llm = Llama(
+        model_path=model_path,
+    ...<3 lines>...
+        verbose=False,
+    )
+  File "C:\Users\iamir\Downloads\REEL_GENERATOR\venv\Lib\site-packages\llama_cpp\llama.py", line 381, in __init__
+    internals.LlamaModel(
+    ~~~~~~~~~~~~~~~~~~~~^
+        path_model=self.model_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        params=self.model_params,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+        verbose=self.verbose,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\iamir\Downloads\REEL_GENERATOR\venv\Lib\site-packages\llama_cpp\_internals.py", line 59, in __init__
+    raise ValueError(f"Failed to load model from file: {path_model}")
+ValueError: Failed to load model from file: C:\Users\iamir\Downloads\REEL_GENERATOR\script\model.gguf

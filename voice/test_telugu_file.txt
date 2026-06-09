@@ -1,0 +1,6 @@
+2
+2
+telugu_text.txt
+n
+n
+0

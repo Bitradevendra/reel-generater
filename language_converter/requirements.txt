@@ -1,0 +1,6 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+accelerate>=1.6.0
+bitsandbytes>=0.48.1
+sentencepiece>=0.2.0
+torch~=2.4.1
+transformers>=4.51.0
