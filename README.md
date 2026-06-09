@@ -2,6 +2,8 @@
 
 Windows-first local reel generator for scripts, translation, voice, image scraping, subtitles, and final reel video composition.
 
+Coding agents and IDE assistants should read `AGENTS.md` before setup or edits.
+
 This repo keeps source code in GitHub and recreates heavy local assets during setup:
 
 - `script/llama.cpp` is included as a pinned Git submodule.
